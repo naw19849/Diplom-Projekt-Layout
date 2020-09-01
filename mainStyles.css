@@ -1,0 +1,215 @@
+body{
+  margin: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+/*##################################################################### Head #####################################################################*/
+header {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+}
+#mainNavBar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#mainNavBar a, input {
+  float: left;
+  display: block;
+  font-weight: bold;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+}
+#mainNavBar input {
+  padding: 8px 16px;
+}
+#mainNavBar > a:hover {
+  background: #ddd;
+  color: black;
+}
+#mainNavBar .navRightElm a:hover{
+  color: #D4AF37;
+}
+.navRightElm {
+  float: right;
+  height: 30px;
+}
+.active-page {
+  background-color: #666;
+}
+.navUser img {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 0;
+}
+/* #navUserLogout{
+  background-color: #f44;
+} */
+
+/*##################################################################### Log in #####################################################################*/
+#userLoginDiv{
+  visibility: hidden;
+  width: 20%;
+  height: 42%;
+  background-color: #333;
+  position: absolute;
+  /* top: 0; 50%*/
+  right: 0;
+  margin-left: -10%;
+  margin-top: -10px;
+  z-index: 1;
+}
+
+#userRegistrationDiv {
+  visibility: hidden;
+  width: 20%;
+  height: 48%;
+  background-color: #333;
+  position: absolute;
+  /* top: 50%; */
+  right: 0;
+  margin-left: -10%;
+  margin-top: -10px;
+  z-index: 1;
+}
+
+.userVerification h2 {
+  display: inline-block;
+}
+
+.userVerification input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: #000;
+  background-color: #FFF;
+}
+
+.userVerification label {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  color: #FFF;
+}
+
+.userVerification span {
+  width: 50%;
+  height: 0;
+  /* position: absolute;
+  right: 0; */
+  padding-right: 10px;
+  float: right;
+  text-align: right;
+  font-size: 10px;
+  margin-top: 0px;
+}
+
+/* #forgotPsw {
+  height: 0;
+} */
+.userVerification button {
+    background-color: #D4AF37;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.userVerification button:hover {
+    opacity: 0.8;
+}
+
+.userVerification img {
+  background-color: #FFF;
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -25px;
+}
+
+#userLoginDiv .cancelBtn, #userRegistrationDiv .cancelBtn {
+    width: auto;
+    font-size: 20px;
+    padding: 10px 18px;
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    float: right;
+    color: #FFF;
+    z-index: 10;
+}
+
+#userLoginDiv .cancelBtn:hover, #userRegistrationDiv .cancelBtn:hover {/* button[name="cancelBtn"]:focus { */
+    color: #f44;
+}
+/*##################################################################### Main #####################################################################*/
+h1 {
+  font-size: 60px;
+}
+main {
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  width: 80%;
+}
+main a, main p {
+  display: inline-block;
+  width: 70%;
+  margin-bottom: 3vh;
+  margin-top: 20px;
+}
+
+
+/*##################################################################### Footer #####################################################################*/
+footer {
+  height: 100px;
+  position: relative;
+  /* margin-top: 200px; */
+  bottom: 0;
+  font-size: 12px;
+
+  /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+.footerText {
+  float: left;
+  display: block;
+  width: 55%;
+}
+footer ul {
+  list-style-type: none;
+  float:left;
+  display: inline-block;
+  width: 20%;
+}
+
+
+.gr{
+  font-size: 50px;
+}
+
+/*##################################################################### Carousel #####################################################################*/
+.carousel{
+  z-index: -1
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="mainStyles.css" media="screen">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="temporaryLogedInView.js"></script>
+  <style media="screen">
+    main a {
+      width: 40%;
+    }
+    main img {
+      width: 400px;
+      height: 400px;
+    }
+    .socialNetworks a {
+      width: auto;
+    }
+    .socialNetworks img {
+      width: 50px;
+      height: 50px;
+      padding: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="mainNavBar">
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="eventLocations.html">Event Locations</a>
+    <a href="members.html">Members</a>
+    <a href="legalDisclosure.html">Legal Disclosure</a>
+    <a href="aboutUs.html">About US</a>
+    <input type="text" name="search" placeholder="Search Member">
+    <div class="navRightElm">
+      <a href="#" id="navRegister">Register</a>
+      <a href="#" id="navLogin">Log in</a>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="userForms">
+      <div class="userVerification" id="userRegistrationDiv">
+        <img src="https://testcreative.co.uk/wp-content/uploads/2018/08/logo.png" alt="Test-Logo">
+        <button type="button" name="cancelBtn" class="cancelBtn">X</button>
+
+        <form id="userRegistrationForm" action="index.html" method="post">
+          <label><b>Username</b></label>
+          <input type="text" name="uname" placeholder="Enter Username" required>
+          <label><b>Create Password</b></label>
+          <input type="password" name="createPwd" placeholder="Password" required>
+          <label><b>Repeat Password</b></label>
+          <input type="password" name="repeatPwd" placeholder="Password" required>
+          <button type="submit" id="loginBtn">Create Account</button>
+        </form>
+      </div>
+
+
+      <div class="userVerification" id="userLoginDiv">
+        <img src="https://testcreative.co.uk/wp-content/uploads/2018/08/logo.png" alt="Test-Logo">
+        <button type="button" name="cancelBtn" class="cancelBtn">X</button>
+
+        <form id="userLoginForm" action="index.html" method="post">
+          <label><b>Username</b></label>
+          <input type="text" name="uname" placeholder="Enter Username" required>
+          <label><b>Password</b></label>
+          <input type="password" name="pwd" placeholder="Enter Password" required>
+          <button type="submit" id="loginBtn">Login</button>
+        </form>
+
+        <span class="psw"><a href="#mussNochGemachtWerden">Forgot password?</a></span>
+      </div>
+    </div>
+    
+    <h1>User Resu</h1>
+    <img src="user.png" alt="User">
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat deleniti pariatur laboriosam. Explicabo quae fugit itaque in aliquid. Dolorum error unde fugit ducimus repellendus quasi aperiam sint quidem, quae voluptatem ex a, eligendi soluta assumenda ab. Libero, expedita, laudantium. Velit distinctio quo incidunt esse amet deserunt autem iusto facere, possimus.</p>
+    <div class="socialNetworks">
+      <a href="https://facebook.com/User+Resu">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEVCZ7L///81X6+kstUwXK7V2+s0Xq69x+A8Y7AtWq319/rr7fW3wt3l6fN5j8Q/ZbFMb7Zth8GCmMmwvdzP1+onVqseUqqNn8vb4O6suNj3+Pvh5vGaq9PG0OZaebqmtdhzisJSc7jmO4l6AAADf0lEQVR4nO3c61biMBSGYRpD3C2mZ0fH43D/Nzm6nFEMhR52u8uO3/ufrDw2UEpjN0nsbdaewOJBqD8I9fcDhb7JS3JGY47KvPE9wrZKDRV6I5NW7RlhVlvaaI9snZ0S+tKsPb1ZMqXvFvoIDuBHZH2XMCtjAb4Ry6xDWMexRD8y9bGwtWvPatZseySs4lmj71EVCn269pxmLvWBsInpXfieaQJhHtcifVumeSAsi7WnNHPFPhBSdEIKhC46oQuEJjqhgVB7EOrvooUFGWfTs/VfJlyusCDrqqvrrc8espM9PPYSL1VIrny6T/rb9V4oXKaQbPU8gKdWWNiX9pQoCiF9Xu9EKjQvu+FAjUJ3N8KnUWifRgH1Ce3rOKA6oRt5BNUJD36+jVNYlNkpSCRCO+RrmmahGXeeUCjcPEQudCO+q6kUTvmY0SU0o0+F6oSPkQuLl0lARcKJi1SR0A6+qtcqvJ1yMlQlnLpxUI3waz9BtMLx103ahBM/SvUIzdVEYRaP8Pku7+pP79YRJcLt3hrqrHdoHcLr2+mzUiH0KWNSKoSsfVoahLsNZ04ahPeOM7QG4Za1pxdCoSBkBKFQEDKCUCgIGUEoFISMIBQKQkYQCgUhIwiFgpARhEJByAhCoSBkBKFQEDKCUCgIGa0gJHfc7Vnhr45XDH6MjryQ7q47OvfvMrubjhf8HkqUF7qbM5jh9W/Z+5da4eDnWUE4fxBCCGEYhPMHIYQQhkE4fxBCCGEYhPMHIYQQhkE4fxBC+GOEF/ybd/z3LeK/99RZXPcPu4KQEYRCQcgIQqEgZAShUBAyglAoCBlBKBSEjCAUCkJGEAoFISMIhYKQEYRCQcgIQqEgZAShUBAyglAoCBlBKBSEjCAUCkJGEAoFISMIhYKQEYRCQcgIQqEgZAShUBAyglAoCBlBKBSEjCAUCkJGEAoFISMIhYKQ0ZHQRSd0gZCiE1IgLKMT7gNhTnPNekwLCikPhM3gB7/M2YJC0wTCwc9fmrUFhakPhEm1xjJdTkjV/2E+hS3rLzax5YR2eyRM6hXeiYsJTf05zJcwK+XX6VJCKrMOYeKtOHEhIVn/NcyBMPGl9EJdRmjKA+A3YZLVwodxCSHZOjscZvN91LZKDRVi9QjHD0gmrbbfh9mE4/om35MzMvU8c2/kaI72eePDYY6E0QWh/iDUH4T6+wuZPoVqlZRK/gAAAABJRU5ErkJggg==" alt="facebook">
+      </a>
+      <a href="https://instagram.com">
+        <img src="https://www.dunkermotoren.de/fileadmin/_processed_/8/4/csm_insta_62174c0e3a.png" alt="insstagram">
+      </a>
+      <a href="https://twitter.com">
+        <img src="data:image/png;base64,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" alt="twitter">
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footerText">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel inventore, odio eius nulla ipsum eligendi distinctio explicabo quae sapiente, unde alias necessitatibus! Earum accusamus saepe repellendus dolorum id, nihil laboriosam, ullam fugit est architecto, obcaecati nobis doloribus. Nostrum quas delectus, at voluptas sunt neque earum quaerat. Illo, beatae perferendis possimus. Obcaecati illo architecto in non distinctio at itaque consequuntur. Pariatur aspernatur fuga veniam ullam quod assumenda rem adipisci tempore ea, quae ad amet ab natus alias deleniti. Dolor iste, eveniet odit debitis expedita blanditiis illum id temporibus dignissimos, quos officia!</p>
+    </div>
+    <ul>
+      <li>Lorem ipsum dolor.</li>
+      <li>sed ipsam fugiat</li>
+      <li>numquam odit ea voluptatum</li>
+    </ul>
+    <ul>
+    <li>numquam odit ea voluptatum</li>
+    <li>sed ipsam fugiat</li>
+    <li>Lorem ipsum dolor.</li>
+    </ul>
+  </footer>
+</body>
+</html>

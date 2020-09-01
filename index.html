@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="calendar.js"></script>
+  <link rel="stylesheet" href="mainStyles.css" media="screen">
+  <link rel="stylesheet" href="calendar.css">
+  <style media="screen">
+    #myCarousel img {
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+  <script type="text/javascript">
+    // $('document').ready(function(){
+    //   // $('#userRegistrationDiv').hide();
+    //   // $('#userLoginDiv').hide();
+    //   $('#navRegister').on('click', function(){
+    //     if ($('#userRegistrationDiv').css('visibility') == 'hidden') {
+    //       $('#userLoginDiv').css('visibility', 'hidden');
+    //       $('#userRegistrationDiv').css('visibility', 'visible');
+    //     } else
+    //       $('#userRegistrationDiv').css('visibility', 'hidden');
+    //   });
+    //
+    //
+    //   $('#navLogin').on('click', function(){
+    //     if ($('#userLoginDiv').css('visibility') == 'hidden') {
+    //       $('#userRegistrationDiv').css('visibility', 'hidden');
+    //       $('#userLoginDiv').css('visibility', 'visible');
+    //     } else
+    //       $('#userLoginDiv').css('visibility', 'hidden');
+    //   });
+    //
+    //   $('.cancelBtn').on('click', function(){
+    //     $('#userRegistrationDiv').css('visibility', 'hidden');
+    //     $('#userLoginDiv').css('visibility', 'hidden');
+    //   });
+    //
+    // });
+  </script>
+  <script src="temporaryLogedInView.js"></script>
+</head>
+<body>
+  <header>
+    <div id="mainNavBar">
+    <a href="index.html" class='active-page'>Home</a>
+    <a href="events.html">Events</a>
+    <a href="eventLocations.html">Event Locations</a>
+    <a href="members.html">Members</a>
+    <a href="legalDisclosure.html">Legal Disclosure</a>
+    <a href="aboutUs.html">About US</a>
+    <input type="text" name="search" placeholder="Search Member">
+    <div class="navRightElm">
+      <a href="#" id="navRegister">Register</a>
+      <a href="#" id="navLogin">Log in</a>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="userForms">
+      <div class="userVerification" id="userRegistrationDiv">
+        <img src="https://testcreative.co.uk/wp-content/uploads/2018/08/logo.png" alt="Test-Logo">
+        <button type="button" name="cancelBtn" class="cancelBtn">X</button>
+
+        <form id="userRegistrationForm" action="index.html" method="post">
+          <label><b>Username</b></label>
+          <input type="text" name="uname" placeholder="Enter Username" required>
+          <label><b>Create Password</b></label>
+          <input type="password" name="createPwd" placeholder="Password" required>
+          <label><b>Repeat Password</b></label>
+          <input type="password" name="repeatPwd" placeholder="Password" required>
+          <button type="submit" id="loginBtn">Create Account</button>
+        </form>
+      </div>
+
+
+      <div class="userVerification" id="userLoginDiv">
+        <img src="https://testcreative.co.uk/wp-content/uploads/2018/08/logo.png" alt="Test-Logo">
+        <button type="button" name="cancelBtn" class="cancelBtn">X</button>
+
+        <form id="userLoginForm" action="index.html" method="post">
+          <label><b>Username</b></label>
+          <input type="text" name="uname" placeholder="Enter Username" required>
+          <label><b>Password</b></label>
+          <input type="password" name="pwd" placeholder="Enter Password" required>
+          <button type="submit" id="loginBtn">Login</button>
+        </form>
+
+        <span id="forgotPsw"><a href="#mussNochGemachtWerden">Forgot password?</a></span>
+      </div>
+    </div>
+
+
+    <h1>Lorem ipsum</h1>
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <!-- <a href="singleLocation.html"> -->
+              <img src="https://mixology.eu/wp-content/uploads/2019/10/parfuemerie-bar-wien.jpg" alt="Location 1" style="width:100%;">
+            <!-- </a> -->
+          </div>
+
+          <div class="item">
+            <img src="https://s3-eu-west-1.amazonaws.com/images.ticketgretchen.com.ir/rotebar_event.jpg" alt="Location 2" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="https://as2.ftcdn.net/jpg/02/06/67/43/500_F_206674315_ULdNb3XGvrLFMzmCtZghIETWOUBz29gN.jpg" alt="Location 3" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/91/c7/87/the-retro-bar-is-a-comfortable.jpg" alt="Location 4" style="width:100%;">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a> -->
+      </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis repudiandae distinctio, ad iusto similique cumque, blanditiis sunt ipsa placeat minima quam. Voluptates quasi quo consequuntur aliquid eveniet at tempore aperiam id, labore. Quaerat, incidunt, vitae voluptatem consectetur officia inventore quas similique minus, repudiandae quibusdam quae labore dolore error nobis distinctio! Iure atque obcaecati pariatur delectus accusamus soluta tempore vero quaerat ipsum laudantium ad adipisci similique dicta, fuga accusantium temporibus doloribus officia iste quibusdam unde. Minus praesentium consectetur expedita libero dolor ipsa, ab perferendis.
+    Fugiat porro, commodi velit doloremque cum voluptates. Ipsam iste delectus sint officia tempora nostrum animi, iure asperiores nam debitis accusamus quo corporis consequuntur adipisci obcaecati facilis a, perspiciatis dicta ipsa iusto. Deleniti officiis quidem recusandae tenetur provident vitae, corporis nesciunt architecto ad voluptatibus, dolores, cum velit.</p>
+
+    <div class="wrapper">
+      <div class="container-calendar">
+          <h2 id="monthAndYear"></h2>
+          <div class="button-container-calendar">
+              <button id="previous">&#8249;</button>
+              <button id="next">&#8250;</button>
+          </div>
+
+          <table class="table-calendar" id="calendar" data-lang="en">
+              <thead id="thead-month"></thead>
+              <tbody id="calendar-body"></tbody>
+          </table>
+
+          <div class="footer-container-calendar">
+              <label for="month">Jump To: </label>
+              <select id="month">
+                  <option value=0>Jan</option>
+                  <option value=1>Feb</option>
+                  <option value=2>Mar</option>
+                  <option value=3>Apr</option>
+                  <option value=4>May</option>
+                  <option value=5>Jun</option>
+                  <option value=6>Jul</option>
+                  <option value=7>Aug</option>
+                  <option value=8>Sep</option>
+                  <option value=9>Oct</option>
+                  <option value=10>Nov</option>
+                  <option value=11>Dec</option>
+              </select>
+              <select id="year"></select>
+          </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footerText">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel inventore, odio eius nulla ipsum eligendi distinctio explicabo quae sapiente, unde alias necessitatibus! Earum accusamus saepe repellendus dolorum id, nihil laboriosam, ullam fugit est architecto, obcaecati nobis doloribus. Nostrum quas delectus, at voluptas sunt neque earum quaerat. Illo, beatae perferendis possimus. Obcaecati illo architecto in non distinctio at itaque consequuntur. Pariatur aspernatur fuga veniam ullam quod assumenda rem adipisci tempore ea, quae ad amet ab natus alias deleniti. Dolor iste, eveniet odit debitis expedita blanditiis illum id temporibus dignissimos, quos officia!</p>
+    </div>
+    <ul>
+      <li>Lorem ipsum dolor.</li>
+      <li>sed ipsam fugiat</li>
+      <li>numquam odit ea voluptatum</li>
+    </ul>
+    <ul>
+    <li>numquam odit ea voluptatum</li>
+    <li>sed ipsam fugiat</li>
+    <li>Lorem ipsum dolor.</li>
+    </ul>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="mainStyles.css" media="screen">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="temporaryLogedInView.js"></script>
+</head>
+<body>
+  <header>
+    <div id="mainNavBar">
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="eventLocations.html">Event Locations</a>
+    <a href="members.html">Members</a>
+    <a href="legalDisclosure.html">Legal Disclosure</a>
+    <a href="aboutUs.html">About US</a>
+    <div class="navRightElm">
+      <a href="#" id="navRegister">Register</a>
+      <a href="#" id="navLogin">Log in</a>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="userForms">
+      <div class="userVerification" id="userRegistrationDiv">
+        <img src="https://testcreative.co.uk/wp-content/uploads/2018/08/logo.png" alt="Test-Logo">
+        <button type="button" name="cancelBtn" class="cancelBtn">X</button>
+
+        <form id="userRegistrationForm" action="index.html" method="post">
+          <label><b>Username</b></label>
+          <input type="text" name="uname" placeholder="Enter Username" required>
+          <label><b>Create Password</b></label>
+          <input type="password" name="createPwd" placeholder="Password" required>
+          <label><b>Repeat Password</b></label>
+          <input type="password" name="repeatPwd" placeholder="Password" required>
+          <button type="submit" id="loginBtn">Create Account</button>
+        </form>
+      </div>
+
+
+      <div class="userVerification" id="userLoginDiv">
+        <img src="https://testcreative.co.uk/wp-content/uploads/2018/08/logo.png" alt="Test-Logo">
+        <button type="button" name="cancelBtn" class="cancelBtn">X</button>
+
+        <form id="userLoginForm" action="index.html" method="post">
+          <label><b>Username</b></label>
+          <input type="text" name="uname" placeholder="Enter Username" required>
+          <label><b>Password</b></label>
+          <input type="password" name="pwd" placeholder="Enter Password" required>
+          <button type="submit" id="loginBtn">Login</button>
+        </form>
+
+        <span class="psw"><a href="#mussNochGemachtWerden">Forgot password?</a></span>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footerText">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel inventore, odio eius nulla ipsum eligendi distinctio explicabo quae sapiente, unde alias necessitatibus! Earum accusamus saepe repellendus dolorum id, nihil laboriosam, ullam fugit est architecto, obcaecati nobis doloribus. Nostrum quas delectus, at voluptas sunt neque earum quaerat. Illo, beatae perferendis possimus. Obcaecati illo architecto in non distinctio at itaque consequuntur. Pariatur aspernatur fuga veniam ullam quod assumenda rem adipisci tempore ea, quae ad amet ab natus alias deleniti. Dolor iste, eveniet odit debitis expedita blanditiis illum id temporibus dignissimos, quos officia!</p>
+    </div>
+    <ul>
+      <li>Lorem ipsum dolor.</li>
+      <li>sed ipsam fugiat</li>
+      <li>numquam odit ea voluptatum</li>
+    </ul>
+    <ul>
+    <li>numquam odit ea voluptatum</li>
+    <li>sed ipsam fugiat</li>
+    <li>Lorem ipsum dolor.</li>
+    </ul>
+  </footer>
+</body>
+</html>

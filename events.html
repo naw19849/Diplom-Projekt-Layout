@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="mainStyles.css" media="screen">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="temporaryLogedInView.js"></script>
+  <style media="screen">
+    .currentEvents, .pastEvents {
+      width: 300px;
+      height: 500px;
+
+      display: inline-block;
+
+      margin: auto 30px;
+    }
+    main img, .eventText {
+      width: 300px;
+      height: 300px;
+    }
+    .currentEvents img:hover{
+      filter: brightness(130%);
+      transition: all 0.5s;
+    }
+    .pastEvents img{
+      filter: grayscale(100%);
+    }
+    .pastEvents img:hover {
+      filter: grayscale(0%);
+      transition: all 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="mainNavBar">
+    <a href="index.html">Home</a>
+    <a href="events.html" class='active-page'>Events</a>
+    <a href="eventLocations.html">Event Locations</a>
+    <a href="members.html">Members</a>
+    <a href="legalDisclosure.html">Legal Disclosure</a>
+    <a href="aboutUs.html">About US</a>
+    <input type="text" name="search" placeholder="Search Member">
+    <div class="navRightElm">
+      <a href="#" id="navRegister">Register</a>
+      <a href="#" id="navLogin">Log in</a>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="userForms">
+      <div class="userVerification" id="userRegistrationDiv">
+        <img src="https://testcreative.co.uk/wp-content/uploads/2018/08/logo.png" alt="Test-Logo">
+        <button type="button" name="cancelBtn" class="cancelBtn">X</button>
+
+        <form id="userRegistrationForm" action="index.html" method="post">
+          <label><b>Username</b></label>
+          <input type="text" name="uname" placeholder="Enter Username" required>
+          <label><b>Create Password</b></label>
+          <input type="password" name="createPwd" placeholder="Password" required>
+          <label><b>Repeat Password</b></label>
+          <input type="password" name="repeatPwd" placeholder="Password" required>
+          <button type="submit" id="loginBtn">Create Account</button>
+        </form>
+      </div>
+
+
+      <div class="userVerification" id="userLoginDiv">
+        <img src="https://testcreative.co.uk/wp-content/uploads/2018/08/logo.png" alt="Test-Logo">
+        <button type="button" name="cancelBtn" class="cancelBtn">X</button>
+
+        <form id="userLoginForm" action="index.html" method="post">
+          <label><b>Username</b></label>
+          <input type="text" name="uname" placeholder="Enter Username" required>
+          <label><b>Password</b></label>
+          <input type="password" name="pwd" placeholder="Enter Password" required>
+          <button type="submit" id="loginBtn">Login</button>
+        </form>
+
+        <span class="psw"><a href="#mussNochGemachtWerden">Forgot password?</a></span>
+      </div>
+    </div>
+
+
+    <h1>Events</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nostrum et non, fugiat ratione tempore deserunt distinctio possimus alias sunt, ipsa provident laudantium, sint repudiandae! Magnam blanditiis iure ut! Nisi commodi omnis, rerum fuga porro maiores eligendi aut ea illo modi distinctio ullam adipisci voluptatibus, eos reiciendis debitis dolorum quas cum iste atque! Veritatis inventore, laborum tenetur voluptatibus earum, labore assumenda, veniam vero temporibus iusto molestias enim optio neque harum! Repellat tenetur quos provident, maiores fugit, soluta! Ad distinctio totam voluptatibus quidem facere impedit accusamus. Ipsam facere voluptates similique consequatur, vel nisi a magni! Illum quam facere, laudantium nostrum molestiae. </p>
+    <div id="currentEventsDiv">
+      <h2>Upcoming Events</h2>
+      <div class="currentEvents">
+        <a href="event.html"><img src="https://mixology.eu/wp-content/uploads/2019/10/parfuemerie-bar-wien.jpg" alt="Event Nr. x"><p class="eventText">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></a>
+      </div>
+      <div class="currentEvents">
+        <a href="event.html"><img src="https://s3-eu-west-1.amazonaws.com/images.ticketgretchen.com.ir/rotebar_event.jpg" alt="Event Nr. x"><p class="eventText">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></a>
+      </div>
+      <div class="currentEvents">
+        <a href="event.html"><img src="https://as2.ftcdn.net/jpg/02/06/67/43/500_F_206674315_ULdNb3XGvrLFMzmCtZghIETWOUBz29gN.jpg" alt="Event Nr. x"><p class="eventText">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></a>
+      </div>
+      <div class="currentEvents">
+        <a href="event.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/91/c7/87/the-retro-bar-is-a-comfortable.jpg" alt="Event Nr. x"><p class="eventText">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></a>
+      </div>
+      <div class="currentEvents">
+        <a href="event.html"><img src="https://as2.ftcdn.net/jpg/02/06/67/43/500_F_206674315_ULdNb3XGvrLFMzmCtZghIETWOUBz29gN.jpg" alt="Event Nr. x"><p class="eventText">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></a>
+      </div>
+    </div>
+
+    <div id="pastEventsDiv">
+      <h2>Past Events</h2>
+      <div class="pastEvents">
+        <a href="event.html"><img src="https://mixology.eu/wp-content/uploads/2019/10/parfuemerie-bar-wien.jpg" alt="Event Nr. x"><p class="eventText">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></a>
+      </div>
+      <div class="pastEvents">
+        <a href="event.html"><img src="https://s3-eu-west-1.amazonaws.com/images.ticketgretchen.com.ir/rotebar_event.jpg" alt="Event Nr. x"><p class="eventText">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></a>
+      </div>
+      <div class="pastEvents">
+        <a href="event.html"><img src="https://as2.ftcdn.net/jpg/02/06/67/43/500_F_206674315_ULdNb3XGvrLFMzmCtZghIETWOUBz29gN.jpg" alt="Event Nr. x"><p class="eventText">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></a>
+      </div>
+      <div class="pastEvents">
+        <a href="event.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/91/c7/87/the-retro-bar-is-a-comfortable.jpg" alt="Event Nr. x"><p class="eventText">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></a>
+      </div>
+      <div class="pastEvents">
+        <a href="event.html"><img src="https://mixology.eu/wp-content/uploads/2019/10/parfuemerie-bar-wien.jpg" alt="Event Nr. x"><p class="eventText">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></a>
+      </div>
+      <div class="pastEvents">
+        <a href="event.html"><img src="https://s3-eu-west-1.amazonaws.com/images.ticketgretchen.com.ir/rotebar_event.jpg" alt="Event Nr. x"><p class="eventText">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></a>
+      </div>
+      <div class="pastEvents">
+        <a href="event.html"><img src="https://as2.ftcdn.net/jpg/02/06/67/43/500_F_206674315_ULdNb3XGvrLFMzmCtZghIETWOUBz29gN.jpg" alt="Event Nr. x"><p class="eventText">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></a>
+      </div>
+      <div class="pastEvents">
+        <a href="event.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/91/c7/87/the-retro-bar-is-a-comfortable.jpg" alt="Event Nr. x"><p class="eventText">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footerText">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel inventore, odio eius nulla ipsum eligendi distinctio explicabo quae sapiente, unde alias necessitatibus! Earum accusamus saepe repellendus dolorum id, nihil laboriosam, ullam fugit est architecto, obcaecati nobis doloribus. Nostrum quas delectus, at voluptas sunt neque earum quaerat. Illo, beatae perferendis possimus. Obcaecati illo architecto in non distinctio at itaque consequuntur. Pariatur aspernatur fuga veniam ullam quod assumenda rem adipisci tempore ea, quae ad amet ab natus alias deleniti. Dolor iste, eveniet odit debitis expedita blanditiis illum id temporibus dignissimos, quos officia!</p>
+    </div>
+    <ul>
+      <li>Lorem ipsum dolor.</li>
+      <li>sed ipsam fugiat</li>
+      <li>numquam odit ea voluptatum</li>
+    </ul>
+    <ul>
+    <li>numquam odit ea voluptatum</li>
+    <li>sed ipsam fugiat</li>
+    <li>Lorem ipsum dolor.</li>
+    </ul>
+  </footer>
+</body>
+</html>
